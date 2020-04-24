@@ -10,7 +10,9 @@
 export default {
     data(){
         return{
-        haha:"这里"
+        haha:"这里",
+        hehe:"张争辉"
+
         }
     },
     methods:{
