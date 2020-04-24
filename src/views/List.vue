@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div>我是合并的对象{{haha}}</div>
+        <div>我是12345合并的对象{{haha}}</div>
         <button @click="change">改变姓名</button>
    </div>
     
