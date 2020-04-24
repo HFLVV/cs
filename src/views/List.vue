@@ -10,8 +10,9 @@
 export default {
     data(){
         return{
-        haha:"这里",
-        hehe:"张军辉辉"
+        haha:"这里丰台区",
+        hehe:"12345"
+
 
         }
     },
