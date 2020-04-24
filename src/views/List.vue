@@ -11,7 +11,7 @@ export default {
     data(){
         return{
         haha:"这里",
-        hehe:"张争辉"
+        hehe:"张军辉辉"
 
         }
     },
