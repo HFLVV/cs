@@ -11,9 +11,7 @@ export default {
     data(){
         return{
         haha:"这里丰台区",
-        hehe:"12345"
-
-
+        hehe:"张军辉"
         }
     },
     methods:{
