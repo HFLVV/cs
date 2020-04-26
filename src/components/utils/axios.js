@@ -1,7 +1,7 @@
 import Axios from "axios"
 Axios.interceptors.request.use(
     config => {
-    
+      let token=window.localStorage.getItem("token")
       if (token) {  // 每次发送请求之前判断是否存在token，如果存在，则统一在http请求的header都加上token，不用每次请求都手动添加了
         config.headers.Authorization = token;
       }
@@ -25,7 +25,7 @@ Axios.interceptors.request.use(
       if (error.response) {
         console.log(error.response.status)
         if(error.response.status == 401){
-          alt.error("登陆失效,请重新登录!");
+          // alt.error("登陆失效,请重新登录!");
           localStorage.removeItem('token');
           setTimeout(function () {
             location.href = '/index.html';

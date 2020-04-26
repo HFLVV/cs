@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 const routes = [
-  { path: '/', redirect: '/Login' },
+  { path: '/', redirect: '/Home' },
   {
     path: '/Login',
     component: resolve => (require(["../components/login/login.vue"], resolve)),
@@ -13,12 +13,16 @@ const routes = [
     component: resolve => (require(["../views/Home.vue"], resolve)),
     children: [
       {
-        path: 'Header',
-        component: resolve => (require(["../views/Header.vue"], resolve))
+        path: 'Fist',
+        component: resolve => (require(["../views/nav/Fist.vue"], resolve))
       },
       {
-        path: 'List',
-        component: resolve => (require(["../views/List.vue"], resolve))
+        path: 'Mangement',
+        component: resolve => (require(["../views/nav/management.vue"], resolve))
+      },
+      {
+        path: 'Active',
+        component: resolve => (require(["../views/nav/activeList.vue"], resolve))
       }
     ]
   },

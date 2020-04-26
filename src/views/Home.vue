@@ -1,9 +1,23 @@
 <template>
+  <div>
     <div>
       <div>
-        <router-link to="/Home/Header">这里是首页</router-link>
-        <router-link to="/Home/List">这里是列表</router-link>
+        <el-breadcrumb separator="/">
+          <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
+          <el-breadcrumb-item to="/Home/Fist">活动管理</el-breadcrumb-item>
+          <el-breadcrumb-item to="/Home/Mangement">活动列表</el-breadcrumb-item>
+          <el-breadcrumb-item to="/Home/Active">活动详情</el-breadcrumb-item>
+        </el-breadcrumb>
       </div>
-       <router-view/>
     </div>
+    <router-view />
+  </div>
 </template>
+<script>
+export default {
+  
+}
+</script>
+<style scoped>
+
+</style>
